@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloform.css">
+</head>
+<body>
+    <h1>Formulario de Informacion</h1>
+    <form action="fomulario.php" method="post">
+    <fieldset><legend>
+        Sus Datos
+    </legend>
+    <p><label for="nomap">Nombre y apellidos:</label> <input type="text" maxlength="50" name="nomap" id="nomap"></p>
+    <p><label for="con">Contraseña:</label> <input type="password" maxlength="8" name="con" id="con"></p>
+    <p><label for="usu">Usuario:</label> <input type="text" maxlength="50" placeholder="anonimo" disabled name="usu" id="usu"></p>
+    <p>Nivel:</p>
+    <p><input type="radio" id="prof" ><label for="prof">Profesionales</label></p>
+    <p><input type="radio" id="avan" checked><label for="avan">Avanzado</label></p>
+    <p><input type="radio" id="prof"><label for="prof">Principiante</label></p>
+    </fieldset>
+   <p><label for="nacionalidad">Nacionalidad:</label> <select name="nacionalidad" id="nacionalidad"></p>
+    <option value="España">España</option>
+  <option value="Francia">Francia</option>
+  <option value="Inglaterra">Inglaterra</option>
+  <option value="Italia">Italia</option>
+</select>
+<p><label for="Descripcion">Descripcion: <textarea name="Descripcion" id="Descripcion"></textarea></label></p>
+<p> <input type="checkbox" checked><label for="Recibir" >Deseo recibir informacion sobre novedades y ofertas</label></p>
+<p> <input type="checkbox"><label for="Declaro" >Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label></p>
+<p><label for="">Adjuntar foto: <input type="file"></label></p>
+<p><input type="submit">
+<input type="reset" value="Borrar datos">
+</p>
+
+
+</form>
+</body>
+</html>
